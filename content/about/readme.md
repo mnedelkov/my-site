@@ -1,14 +1,14 @@
 ---
 title: "readme"
 date: 2023-01-27T16:45:58-07:00
-draft: true
+draft: false
 ---
 
 Welcome to my website.
 
 Here you will find a collection of anything I find interesting.
 
-Everything from python script"s to Minecraft builds is fair game. 
+Everything from python scripting to Minecraft builds are fair game. 
 
 To search by [categories](../../tags/), select "./tags".
 

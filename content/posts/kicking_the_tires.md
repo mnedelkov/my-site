@@ -1,7 +1,7 @@
 ---
 title: "kicking_the_tires"
 date: 2023-01-27T16:04:13-07:00
-draft: true
+draft: false
 toc: false
 images:
 tags:

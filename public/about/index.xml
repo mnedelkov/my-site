@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on maquel nedelkov</title>
+    <link>https://nedelkov.xyz/about/</link>
+    <description>Recent content in Abouts on maquel nedelkov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 27 Jan 2023 16:45:58 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>readme</title>
+      <link>https://nedelkov.xyz/about/readme/</link>
+      <pubDate>Fri, 27 Jan 2023 16:45:58 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/about/readme/</guid>
+      <description>Welcome to my website.
+Here you will find a collection of anything I find interesting.
+Everything from python scripting to Minecraft builds are fair game.
+To search by categories, select &amp;ldquo;./tags&amp;rdquo;.
+To search by posted date, select &amp;ldquo;./posts&amp;rdquo;.
+Want to get in touch? Feel free to contact me using any of the sites linked on the home page or by email.</description>
+    </item>
+    
+  </channel>
+</rss>
