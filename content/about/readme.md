@@ -8,7 +8,7 @@ Welcome to my website.
 
 Here you will find a collection of anything I find interesting.
 
-Everything from python scripting to Minecraft builds are fair game. 
+Everything from python scripting ideas to Minecraft builds are fair game. 
 
 To search by [categories](../../tags/), select "./tags".
 
