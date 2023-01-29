@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 27 Jan 2023 16:45:58 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/about/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Jan 2023 09:41:49 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>my_resume</title>
+      <link>https://nedelkov.xyz/about/resume/</link>
+      <pubDate>Sun, 29 Jan 2023 09:41:49 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/about/resume/</guid>
+      <description>Here you can see a breif overview of my previous employment history and a bit about my professional accomplishments.
+For my full resume, please contact me by email using the link below:
+Resume Request
+Maquel Nedelkov About Me Information Security Specialist with passion for aligning security architecture plans and processes with security standards and business goals. Extensive experience monitoring threats and risk mitigation for cloud-based and on-premises hosted software. Versed in robust network defense strategies.</description>
+    </item>
+    
     <item>
       <title>readme</title>
       <link>https://nedelkov.xyz/about/readme/</link>
@@ -16,7 +28,7 @@
       <guid>https://nedelkov.xyz/about/readme/</guid>
       <description>Welcome to my website.
 Here you will find a collection of anything I find interesting.
-Everything from python scripting to Minecraft builds are fair game.
+Everything from python scripting ideas to Minecraft builds are fair game.
 To search by categories, select &amp;ldquo;./tags&amp;rdquo;.
 To search by posted date, select &amp;ldquo;./posts&amp;rdquo;.
 Want to get in touch? Feel free to contact me using any of the sites linked on the home page or by email.</description>

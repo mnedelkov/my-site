@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nedelkov.xyz/about/</loc>
-    <lastmod>2023-01-27T16:45:58-07:00</lastmod>
+    <loc>https://nedelkov.xyz/tags/documentation/</loc>
+    <lastmod>2023-01-29T11:03:55-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/tags/linux/</loc>
+    <lastmod>2023-01-29T11:03:55-07:00</lastmod>
   </url><url>
     <loc>https://nedelkov.xyz/</loc>
-    <lastmod>2023-01-27T16:45:58-07:00</lastmod>
+    <lastmod>2023-01-29T11:03:55-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -18,20 +21,11 @@
                 href="https://nedelkov.xyz/"
                 />
   </url><url>
-    <loc>https://nedelkov.xyz/about/readme/</loc>
-    <lastmod>2023-01-27T16:45:58-07:00</lastmod>
-  </url><url>
-    <loc>https://nedelkov.xyz/posts/2023/01/kicking_the_tires/</loc>
-    <lastmod>2023-01-27T16:04:13-07:00</lastmod>
-  </url><url>
     <loc>https://nedelkov.xyz/posts/</loc>
-    <lastmod>2023-01-27T16:04:13-07:00</lastmod>
-  </url><url>
-    <loc>https://nedelkov.xyz/tags/ramble/</loc>
-    <lastmod>2023-01-27T16:04:13-07:00</lastmod>
+    <lastmod>2023-01-29T11:03:55-07:00</lastmod>
   </url><url>
     <loc>https://nedelkov.xyz/tags/</loc>
-    <lastmod>2023-01-27T16:04:13-07:00</lastmod>
+    <lastmod>2023-01-29T11:03:55-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -43,7 +37,34 @@
                 href="https://nedelkov.xyz/tags/"
                 />
   </url><url>
+    <loc>https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/</loc>
+    <lastmod>2023-01-29T11:03:55-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/about/</loc>
+    <lastmod>2023-01-29T09:41:49-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/about/resume/</loc>
+    <lastmod>2023-01-29T09:41:49-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/tags/git/</loc>
+    <lastmod>2023-01-29T09:16:44-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/posts/2023/01/git_stuff/</loc>
+    <lastmod>2023-01-29T09:16:44-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/tags/programming/</loc>
+    <lastmod>2023-01-29T09:16:44-07:00</lastmod>
+  </url><url>
     <loc>https://nedelkov.xyz/tags/web_dev/</loc>
+    <lastmod>2023-01-29T09:16:44-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/about/readme/</loc>
+    <lastmod>2023-01-27T16:45:58-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/posts/2023/01/kicking_the_tires/</loc>
+    <lastmod>2023-01-27T16:04:13-07:00</lastmod>
+  </url><url>
+    <loc>https://nedelkov.xyz/tags/ramble/</loc>
     <lastmod>2023-01-27T16:04:13-07:00</lastmod>
   </url><url>
     <loc>https://nedelkov.xyz/categories/</loc>

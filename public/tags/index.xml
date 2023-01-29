@@ -7,22 +7,58 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 27 Jan 2023 16:04:13 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Jan 2023 11:03:55 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ramble</title>
-      <link>https://nedelkov.xyz/tags/ramble/</link>
-      <pubDate>Fri, 27 Jan 2023 16:04:13 -0700</pubDate>
+      <title>documentation</title>
+      <link>https://nedelkov.xyz/tags/documentation/</link>
+      <pubDate>Sun, 29 Jan 2023 11:03:55 -0700</pubDate>
       
-      <guid>https://nedelkov.xyz/tags/ramble/</guid>
+      <guid>https://nedelkov.xyz/tags/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://nedelkov.xyz/tags/linux/</link>
+      <pubDate>Sun, 29 Jan 2023 11:03:55 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://nedelkov.xyz/tags/git/</link>
+      <pubDate>Sun, 29 Jan 2023 09:16:44 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://nedelkov.xyz/tags/programming/</link>
+      <pubDate>Sun, 29 Jan 2023 09:16:44 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web_dev</title>
       <link>https://nedelkov.xyz/tags/web_dev/</link>
-      <pubDate>Fri, 27 Jan 2023 16:04:13 -0700</pubDate>
+      <pubDate>Sun, 29 Jan 2023 09:16:44 -0700</pubDate>
       
       <guid>https://nedelkov.xyz/tags/web_dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ramble</title>
+      <link>https://nedelkov.xyz/tags/ramble/</link>
+      <pubDate>Fri, 27 Jan 2023 16:04:13 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/tags/ramble/</guid>
       <description></description>
     </item>
     

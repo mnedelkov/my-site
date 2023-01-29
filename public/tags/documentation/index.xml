@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>documentation on maquel nedelkov</title>
+    <link>https://nedelkov.xyz/tags/documentation/</link>
+    <description>Recent content in documentation on maquel nedelkov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 29 Jan 2023 11:03:55 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ubuntu_firefox_kiosk_guide</title>
+      <link>https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/</link>
+      <pubDate>Sun, 29 Jan 2023 11:03:55 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/</guid>
+      <description>Description:
+This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.
+This guide utilized Ubuntu 22.04 LTS
+Process:
+To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file.</description>
+    </item>
+    
+  </channel>
+</rss>
