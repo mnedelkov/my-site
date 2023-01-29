@@ -7,7 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 27 Jan 2023 16:45:58 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Jan 2023 11:03:55 -0700</lastBuildDate><atom:link href="https://nedelkov.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ubuntu_firefox_kiosk_guide</title>
+      <link>https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/</link>
+      <pubDate>Sun, 29 Jan 2023 11:03:55 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/</guid>
+      <description>Description:
+This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.
+This guide utilized Ubuntu 22.04 LTS
+Process:
+To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file.</description>
+    </item>
+    
+    <item>
+      <title>my_resume</title>
+      <link>https://nedelkov.xyz/about/resume/</link>
+      <pubDate>Sun, 29 Jan 2023 09:41:49 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/about/resume/</guid>
+      <description>Here you can see a breif overview of my previous employment history and a bit about my professional accomplishments.
+For my full resume, please contact me by email using the link below:
+Resume Request
+Maquel Nedelkov About Me Information Security Specialist with passion for aligning security architecture plans and processes with security standards and business goals. Extensive experience monitoring threats and risk mitigation for cloud-based and on-premises hosted software. Versed in robust network defense strategies.</description>
+    </item>
+    
+    <item>
+      <title>git_stuff</title>
+      <link>https://nedelkov.xyz/posts/2023/01/git_stuff/</link>
+      <pubDate>Sun, 29 Jan 2023 09:16:44 -0700</pubDate>
+      
+      <guid>https://nedelkov.xyz/posts/2023/01/git_stuff/</guid>
+      <description>Finally got a Github repository set up for this project. It took me a little bit to figure out how to use the site.
+Making a commit and pulling it into the main branch from the terminal took a bit of research to figure out. Turns out, Github depreciated the username and password feature for utilizing the command-line to create push and pull requests.
+The new system requires a user to create a unique token that essentially functions as a password for authorizing actions.</description>
+    </item>
+    
     <item>
       <title>readme</title>
       <link>https://nedelkov.xyz/about/readme/</link>
@@ -16,7 +52,7 @@
       <guid>https://nedelkov.xyz/about/readme/</guid>
       <description>Welcome to my website.
 Here you will find a collection of anything I find interesting.
-Everything from python scripting to Minecraft builds are fair game.
+Everything from python scripting ideas to Minecraft builds are fair game.
 To search by categories, select &amp;ldquo;./tags&amp;rdquo;.
 To search by posted date, select &amp;ldquo;./posts&amp;rdquo;.
 Want to get in touch? Feel free to contact me using any of the sites linked on the home page or by email.</description>

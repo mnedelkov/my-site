@@ -61,10 +61,10 @@ disableHugoGeneratorInject = false
 
   # Home subtitle of the index page.
   #
-  # homeSubtitle = "L33t hax0r, Minecraft builder, and all-around great bloke"
+  # homeSubtitle = ""
 
   # Set a background for the homepage
-  # backgroundImage = "assets/images/cyber.jpg"
+  #   backgroundImage = "./assets/images/cyber.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -184,15 +184,15 @@ disableHugoGeneratorInject = false
     identifier = "about"
     name       = "./about"
     url        = "about/"
-    weight     = 3
+    weight     = 10
   [[menu.main]]
     identifier = "posts"
     name       = "./posts"
     url        = "posts/"
     weight     = 1
+
   [[menu.main]]
     identifier = "tags"
     name       = "./tags"
     url        = "tags/"
     weight     = 2
-

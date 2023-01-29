@@ -5,18 +5,20 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Maquel Nedelkov ">
-<meta name="description" content="I am currently trying to get this site up and running. I have no experience using HUGO to build websites making this quite a challenge.
-The current plan is to get a git repository set up. I&amp;rsquo;m hoping I can have the server update the site itself when it detects a push to the site&amp;rsquo;s repository. Not sure how to do this yet.
-On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works." />
-<meta name="keywords" content=", web_dev, ramble" />
+<meta name="description" content="Description:
+This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.
+This guide utilized Ubuntu 22.04 LTS
+Process:
+To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file." />
+<meta name="keywords" content=", documentation, linux" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="https://nedelkov.xyz/posts/2023/01/kicking_the_tires/" />
+<link rel="canonical" href="https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/" />
 
 
     <title>
         
-            kicking_the_tires :: maquel nedelkov  — Hello Friend NG Theme
+            ubuntu_firefox_kiosk_guide :: maquel nedelkov  — Hello Friend NG Theme
         
     </title>
 
@@ -40,38 +42,44 @@ On the positive side, I have figured out a bunch about how theming and configuri
     <meta name="msapplication-TileColor" content="">
 
 
-<meta itemprop="name" content="kicking_the_tires">
-<meta itemprop="description" content="I am currently trying to get this site up and running. I have no experience using HUGO to build websites making this quite a challenge.
-The current plan is to get a git repository set up. I&rsquo;m hoping I can have the server update the site itself when it detects a push to the site&rsquo;s repository. Not sure how to do this yet.
-On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works."><meta itemprop="datePublished" content="2023-01-27T16:04:13-07:00" />
-<meta itemprop="dateModified" content="2023-01-27T16:04:13-07:00" />
-<meta itemprop="wordCount" content="132"><meta itemprop="image" content="https://nedelkov.xyz"/>
-<meta itemprop="keywords" content="web_dev,ramble," />
+<meta itemprop="name" content="ubuntu_firefox_kiosk_guide">
+<meta itemprop="description" content="Description:
+This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.
+This guide utilized Ubuntu 22.04 LTS
+Process:
+To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file."><meta itemprop="datePublished" content="2023-01-29T11:03:55-07:00" />
+<meta itemprop="dateModified" content="2023-01-29T11:03:55-07:00" />
+<meta itemprop="wordCount" content="1069"><meta itemprop="image" content="https://nedelkov.xyz"/>
+<meta itemprop="keywords" content="documentation,linux," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://nedelkov.xyz"/>
 
-<meta name="twitter:title" content="kicking_the_tires"/>
-<meta name="twitter:description" content="I am currently trying to get this site up and running. I have no experience using HUGO to build websites making this quite a challenge.
-The current plan is to get a git repository set up. I&rsquo;m hoping I can have the server update the site itself when it detects a push to the site&rsquo;s repository. Not sure how to do this yet.
-On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works."/>
+<meta name="twitter:title" content="ubuntu_firefox_kiosk_guide"/>
+<meta name="twitter:description" content="Description:
+This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.
+This guide utilized Ubuntu 22.04 LTS
+Process:
+To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file."/>
 
 
 
-    <meta property="og:title" content="kicking_the_tires" />
-<meta property="og:description" content="I am currently trying to get this site up and running. I have no experience using HUGO to build websites making this quite a challenge.
-The current plan is to get a git repository set up. I&rsquo;m hoping I can have the server update the site itself when it detects a push to the site&rsquo;s repository. Not sure how to do this yet.
-On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works." />
+    <meta property="og:title" content="ubuntu_firefox_kiosk_guide" />
+<meta property="og:description" content="Description:
+This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.
+This guide utilized Ubuntu 22.04 LTS
+Process:
+To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://nedelkov.xyz/posts/2023/01/kicking_the_tires/" /><meta property="og:image" content="https://nedelkov.xyz"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-01-27T16:04:13-07:00" />
-<meta property="article:modified_time" content="2023-01-27T16:04:13-07:00" />
+<meta property="og:url" content="https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/" /><meta property="og:image" content="https://nedelkov.xyz"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-29T11:03:55-07:00" />
+<meta property="article:modified_time" content="2023-01-29T11:03:55-07:00" />
 
 
 
 
 
 
-    <meta property="article:published_time" content="2023-01-27 16:04:13 -0700 MST" />
+    <meta property="article:published_time" content="2023-01-29 11:03:55 -0700 MST" />
 
 
 
@@ -140,7 +148,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
           <circle cx="12" cy="12" r="10"></circle>
           <polyline points="12 6 12 12 16 14"></polyline>
         </svg>
-        One minute
+        6 minutes
 
         
       </p>
@@ -148,7 +156,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 
     <article>
       <h1 class="post-title">
-        <a href="https://nedelkov.xyz/posts/2023/01/kicking_the_tires/">kicking_the_tires</a>
+        <a href="https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/">ubuntu_firefox_kiosk_guide</a>
       </h1>
 
       
@@ -158,11 +166,121 @@ On the positive side, I have figured out a bunch about how theming and configuri
       
 
       <div class="post-content">
-        <p>I am currently trying to get this site up and running. I have no experience using HUGO to build websites making this quite a challenge.</p>
-<p>The current plan is to get a git repository set up. I&rsquo;m hoping I can have the server update the site itself when it detects a push to the site&rsquo;s repository. Not sure how to do this yet.</p>
-<p>On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works. The terminal theming is <em>definitely</em> cool and not tacky at all. I am also gaining a decent familiarity with using markdown to create webpages.</p>
-<p>Looks like this post is working great though! Just need to get the
-&ldquo;about&rdquo; page set up and I basically have a fully functional, if plain, website.</p>
+        <p><strong>Description:</strong></p>
+<p>This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.</p>
+<p><em>This guide utilized Ubuntu 22.04 LTS</em></p>
+<hr>
+<p><strong>Process:</strong></p>
+<p>To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file.desktop).</p>
+<ol>
+<li>First, open a terminal (<em>Ctrl + Alt + t</em>) and execute the following command:</li>
+</ol>
+<p><code>sudo nano /usr/share/xsessions/kiosk.desktop</code></p>
+<ol start="2">
+<li>This will create the .desktop file and open it in the nano text editor. Next we will enter in the required text. Copy the following text into our new file:</li>
+</ol>
+<pre tabindex="0"><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Kiosk Mode
+Comment=Firefox Kiosk
+Exec=/usr/share/xsessions/firefoxKiosk.sh
+Type=Application
+</code></pre><p>Breaking down what is going on, we are setting up a desktop launch option from the Ubuntu account login screen.</p>
+<p>As for the “Exec” line, we are listing the path to the shell script that will launch our Firefox kiosk. We will create that file in just a moment.</p>
+<ol start="3">
+<li>Now we will save the .desktop file. Press <em>Ctrl + o</em> then <em>Enter</em> to save the file and <em>Ctrl + x</em> to exit the file once saved.</li>
+</ol>
+<hr>
+<p>Next, we will create and populate the shell script with the required bash commands that the .desktop file will call in the “Exec” line.</p>
+<ol>
+<li>Execute the following command to create the shell script file and open it in nano:</li>
+</ol>
+<p><code>sudo nano /usr/share/xsessions/firefoxKiosk.sh</code></p>
+<ol start="2">
+<li>Enter the following commands in our new script:</li>
+</ol>
+<pre tabindex="0"><code>#!/bin/bash
+xset s off
+xset s noblank
+sleep 10s
+while true; do
+	firefox -kiosk &lt;URL&gt; &amp; -width XXXX -height XXXX -P 
+&lt;profile&gt;;
+	sleep 10s;
+done
+</code></pre><p>Here&rsquo;s a breakdown of what we have set up now.</p>
+<p><em>xset</em>: disables the screensaver.</p>
+<p><em>firefox</em>: launches firefox</p>
+<p><em>-kiosk</em>: opens firefox in kiosk mode</p>
+<p><em><!-- raw HTML omitted --> &amp;</em>: allows us to specify a page to open the browser on</p>
+<p><em>-width XXXX -height XXXX</em>: sets the window dimensions for the browser to avoid any blank space around the window.</p>
+<p><em>-P &lt;profile_name&gt;</em>: allows us to specify a profile to use. It is required for setting screen dimensions.</p>
+<ol start="3">
+<li>Once again, save and exit the file using the hotkeys above.</li>
+</ol>
+<hr>
+<p>Now we need to make sure that the shell script has executing permissions.</p>
+<ol>
+<li>Run the command:</li>
+</ol>
+<p><code>sudo chmod -x /usr/share/xsessions/firefoxKiosk.sh</code></p>
+<ol start="2">
+<li>Double check the file is executable by:</li>
+</ol>
+<p><code>sudo ls -la /usr.share/xsessions/firefoxKiosk.sh</code></p>
+<hr>
+<p>Now we are going to create a separate user without admin creds for using the kiosk.</p>
+<p>Go to Settings &gt; Users, enter the admin password and create a new user. Later we will need to come back and edit this user.</p>
+<p>Now log out. You should see both users listed on the login screen. We need to check and make sure that we now have a new “Kiosk Mode” option for our desktop. To do that, select the new kiosk user. In the bottom right corner, you should see a small gear icon. When you click that, the “Kiosk Mode” option should be populated alongside the others.</p>
+<p>If it is not there, you will need to go back over the kiosk.desktop file to make sure it was created in the right directory with the correct file name and contained text.</p>
+<hr>
+<p>Now login to the new kiosk account. We will need to get our firefox profile created and configured.</p>
+<ol>
+<li>Open a terminal and launch Firefox with the following command:</li>
+</ol>
+<p><code>firefox -P kiosk</code></p>
+<ol start="2">
+<li>
+<p>This will pop open a box for Firefox allowing us to create a new profile. We need to make sure that the profile name we used in our shell script above matches the one we create.</p>
+</li>
+<li>
+<p>Next we will setup private browsing for our new profile:</p>
+</li>
+</ol>
+<pre tabindex="0"><code>In Firefox, select the Application Menu &gt; Settings &gt; Privacy and Security
+
+In the History section, select Firefox will: “Use custom settings for history”
+
+Then check “Always use private browsing mode”
+</code></pre><hr>
+<p>Now everything should be good to go. First, we will test everything to make sure it is working. Logout of the kiosk account. Select the kiosk account from the sign-in screen and select the gear in the bottom right. Select our new “Kiosk Mode” desktop option and enter the password to sign in.</p>
+<p>With any luck we should see Firefox launch in full screen to the URL we specified.</p>
+<p>If everything launched the way it was supposed to, we are good to finish our configuration by enabling auto-login for the kiosk user.</p>
+<p>Before we enable auto-login, make sure the kiosk user has the “Kiosk Mode” selected in the login screen so it boots into the right desktop.</p>
+<ol>
+<li>
+<p>Got back to Settings &gt; Users, enter the admin password</p>
+</li>
+<li>
+<p>Select the kiosk user and  toggle Auto-login</p>
+</li>
+</ol>
+<p>Now restart the computer. It should now boot directly into the Firefox browser in full screen.</p>
+<hr>
+<p>Considerations:</p>
+<p><em>Browser</em></p>
+<p>When configured this way, there will be no menu bar, application button, search bar, etc. It will only display the current webpage with no additional access. You will be unable to navigate tabs, open a new window, or close the browser.</p>
+<p>There is a bit of a way around this however. The tab hotkeys for Firefox will still work.</p>
+<p><em>Ctrl + t</em>: Opens a new tab</p>
+<p><em>Ctrl + w</em>: Closes the current tab</p>
+<p><em>Ctrl +r</em>: Refreshes the current tab</p>
+<p>Using tabs this way though is difficult as you are unable to see what is open where.</p>
+<p><em>Desktop Environment</em></p>
+<p>When you use the “Kiosk Mode” desktop, there will be no access to any other apps, icons, toolbars, or the like. It will only open Firefox on boot. That is it. You will not even be able to access the terminal through the regular hotkey. There is however a way around this.</p>
+<p><em>Ctrl + Alt + F3</em>: This hotkey will open tty and allow you to enter commands.</p>
+<p>You can use it to power down the machine or navigate the system with commands. It will be handy in case you need to do troubleshooting of your script or other configurations, as the device will now always boot up into Firefox only.</p>
+<p><em>SSH</em></p>
+<p>I would recommend installing SSH on the machine as well if it will be used in an enterprise environment. It will help with remote troubleshooting issues with the configuration. However, I would only do this if the machine will have no PHI or PII if you are required to be HIPAA compliant.</p>
 
       </div>
     </article>
@@ -174,8 +292,8 @@ On the positive side, I have figured out a bunch about how theming and configuri
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
 
-        <span class="tag"><a href="https://nedelkov.xyz/tags/web_dev/">web_dev</a></span>
-        <span class="tag"><a href="https://nedelkov.xyz/tags/ramble/">ramble</a></span>
+        <span class="tag"><a href="https://nedelkov.xyz/tags/documentation/">documentation</a></span>
+        <span class="tag"><a href="https://nedelkov.xyz/tags/linux/">linux</a></span>
         
     </p>
 
@@ -189,7 +307,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
           <line x1="16" y1="17" x2="8" y2="17"></line>
           <polyline points="10 9 9 9 8 9"></polyline>
         </svg>
-        132 Words
+        1069 Words
       </p>
 
       <p>
@@ -200,7 +318,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
           <line x1="3" y1="10" x2="21" y2="10"></line>
         </svg>
         
-          2023-01-27 16:04
+          2023-01-29 11:03
         
 
          
@@ -211,7 +329,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
       <hr />
       <div class="sharing-buttons">
         
-<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
   <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </div>
@@ -219,7 +337,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
   <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
       <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
@@ -228,7 +346,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=kicking_the_tires&amp;caption=kicking_the_tires&amp;canonicalUrl=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=ubuntu_firefox_kiosk_guide&amp;caption=ubuntu_firefox_kiosk_guide&amp;canonicalUrl=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
   <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
     <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
@@ -237,7 +355,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="mailto:?subject=kicking_the_tires&amp;body=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+<a class="resp-sharing-button__link" href="mailto:?subject=ubuntu_firefox_kiosk_guide&amp;body=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
   <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
     </div>
@@ -245,7 +363,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f&amp;media=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f;description=kicking_the_tires" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f&amp;media=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f;description=ubuntu_firefox_kiosk_guide" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
   <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
     </div>
@@ -253,7 +371,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f&amp;title=kicking_the_tires&amp;summary=kicking_the_tires&amp;source=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f&amp;title=ubuntu_firefox_kiosk_guide&amp;summary=ubuntu_firefox_kiosk_guide&amp;source=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
   <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
     </div>
@@ -261,7 +379,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f&amp;resubmit=true&amp;title=kicking_the_tires" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f&amp;resubmit=true&amp;title=ubuntu_firefox_kiosk_guide" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
   <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
     </div>
@@ -269,7 +387,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f;title=kicking_the_tires" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f;title=ubuntu_firefox_kiosk_guide" target="_blank" rel="noopener" aria-label="" title="Share on xing">
   <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
     </div>
@@ -277,7 +395,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="whatsapp://send?text=kicking_the_tires%20https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+<a class="resp-sharing-button__link" href="whatsapp://send?text=ubuntu_firefox_kiosk_guide%20https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
   <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     </div>
@@ -285,7 +403,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f&amp;t=kicking_the_tires" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f&amp;t=ubuntu_firefox_kiosk_guide" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
   <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
 			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
     </div>
@@ -293,7 +411,7 @@ On the positive side, I have figured out a bunch about how theming and configuri
 </a>
 
 
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=kicking_the_tires&amp;url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fkicking_the_tires%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=ubuntu_firefox_kiosk_guide&amp;url=https%3a%2f%2fnedelkov.xyz%2fposts%2f2023%2f01%2fubuntu_firefox_kiosk_guide%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
   <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
     </div>
@@ -308,14 +426,14 @@ On the positive side, I have figured out a bunch about how theming and configuri
 
         <div class="pagination__buttons">
             
-            <span class="button previous">
+
+            
+            <span class="button next">
                 <a href="https://nedelkov.xyz/posts/2023/01/git_stuff/">
-                    <span class="button__icon">←</span>
                     <span class="button__text">git_stuff</span>
+                    <span class="button__icon">→</span>
                 </a>
             </span>
-            
-
             
         </div>
     </div>

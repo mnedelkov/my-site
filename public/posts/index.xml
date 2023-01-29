@@ -6,8 +6,172 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 27 Jan 2023 16:04:13 -0700</lastBuildDate>
+        <lastBuildDate>Sun, 29 Jan 2023 11:03:55 -0700</lastBuildDate>
         <atom:link href="https://nedelkov.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>ubuntu_firefox_kiosk_guide</title>
+            <link>https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/</link>
+            <pubDate>Sun, 29 Jan 2023 11:03:55 -0700</pubDate>
+            
+            <guid>https://nedelkov.xyz/posts/2023/01/ubuntu_firefox_kiosk_guide/</guid>
+            <description>Description:
+This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.
+This guide utilized Ubuntu 22.04 LTS
+Process:
+To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file.</description>
+            <content type="html"><![CDATA[<p><strong>Description:</strong></p>
+<p>This is a guide on how to set up a Firefox Kiosk. The kiosk may only be used for browsing the web on a configured machine. Basically, once setup, the machine will boot directly into a specific webpage. The machine will be unable to access other applications, such as: terminal, settings, other browsers.</p>
+<p><em>This guide utilized Ubuntu 22.04 LTS</em></p>
+<hr>
+<p><strong>Process:</strong></p>
+<p>To get it setup, we need to create a brand new desktop file to be executed upon selection from the Ubuntu login menu (formatted like file.desktop).</p>
+<ol>
+<li>First, open a terminal (<em>Ctrl + Alt + t</em>) and execute the following command:</li>
+</ol>
+<p><code>sudo nano /usr/share/xsessions/kiosk.desktop</code></p>
+<ol start="2">
+<li>This will create the .desktop file and open it in the nano text editor. Next we will enter in the required text. Copy the following text into our new file:</li>
+</ol>
+<pre tabindex="0"><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Kiosk Mode
+Comment=Firefox Kiosk
+Exec=/usr/share/xsessions/firefoxKiosk.sh
+Type=Application
+</code></pre><p>Breaking down what is going on, we are setting up a desktop launch option from the Ubuntu account login screen.</p>
+<p>As for the “Exec” line, we are listing the path to the shell script that will launch our Firefox kiosk. We will create that file in just a moment.</p>
+<ol start="3">
+<li>Now we will save the .desktop file. Press <em>Ctrl + o</em> then <em>Enter</em> to save the file and <em>Ctrl + x</em> to exit the file once saved.</li>
+</ol>
+<hr>
+<p>Next, we will create and populate the shell script with the required bash commands that the .desktop file will call in the “Exec” line.</p>
+<ol>
+<li>Execute the following command to create the shell script file and open it in nano:</li>
+</ol>
+<p><code>sudo nano /usr/share/xsessions/firefoxKiosk.sh</code></p>
+<ol start="2">
+<li>Enter the following commands in our new script:</li>
+</ol>
+<pre tabindex="0"><code>#!/bin/bash
+xset s off
+xset s noblank
+sleep 10s
+while true; do
+	firefox -kiosk &lt;URL&gt; &amp; -width XXXX -height XXXX -P 
+&lt;profile&gt;;
+	sleep 10s;
+done
+</code></pre><p>Here&rsquo;s a breakdown of what we have set up now.</p>
+<p><em>xset</em>: disables the screensaver.</p>
+<p><em>firefox</em>: launches firefox</p>
+<p><em>-kiosk</em>: opens firefox in kiosk mode</p>
+<p><em><!-- raw HTML omitted --> &amp;</em>: allows us to specify a page to open the browser on</p>
+<p><em>-width XXXX -height XXXX</em>: sets the window dimensions for the browser to avoid any blank space around the window.</p>
+<p><em>-P &lt;profile_name&gt;</em>: allows us to specify a profile to use. It is required for setting screen dimensions.</p>
+<ol start="3">
+<li>Once again, save and exit the file using the hotkeys above.</li>
+</ol>
+<hr>
+<p>Now we need to make sure that the shell script has executing permissions.</p>
+<ol>
+<li>Run the command:</li>
+</ol>
+<p><code>sudo chmod -x /usr/share/xsessions/firefoxKiosk.sh</code></p>
+<ol start="2">
+<li>Double check the file is executable by:</li>
+</ol>
+<p><code>sudo ls -la /usr.share/xsessions/firefoxKiosk.sh</code></p>
+<hr>
+<p>Now we are going to create a separate user without admin creds for using the kiosk.</p>
+<p>Go to Settings &gt; Users, enter the admin password and create a new user. Later we will need to come back and edit this user.</p>
+<p>Now log out. You should see both users listed on the login screen. We need to check and make sure that we now have a new “Kiosk Mode” option for our desktop. To do that, select the new kiosk user. In the bottom right corner, you should see a small gear icon. When you click that, the “Kiosk Mode” option should be populated alongside the others.</p>
+<p>If it is not there, you will need to go back over the kiosk.desktop file to make sure it was created in the right directory with the correct file name and contained text.</p>
+<hr>
+<p>Now login to the new kiosk account. We will need to get our firefox profile created and configured.</p>
+<ol>
+<li>Open a terminal and launch Firefox with the following command:</li>
+</ol>
+<p><code>firefox -P kiosk</code></p>
+<ol start="2">
+<li>
+<p>This will pop open a box for Firefox allowing us to create a new profile. We need to make sure that the profile name we used in our shell script above matches the one we create.</p>
+</li>
+<li>
+<p>Next we will setup private browsing for our new profile:</p>
+</li>
+</ol>
+<pre tabindex="0"><code>In Firefox, select the Application Menu &gt; Settings &gt; Privacy and Security
+
+In the History section, select Firefox will: “Use custom settings for history”
+
+Then check “Always use private browsing mode”
+</code></pre><hr>
+<p>Now everything should be good to go. First, we will test everything to make sure it is working. Logout of the kiosk account. Select the kiosk account from the sign-in screen and select the gear in the bottom right. Select our new “Kiosk Mode” desktop option and enter the password to sign in.</p>
+<p>With any luck we should see Firefox launch in full screen to the URL we specified.</p>
+<p>If everything launched the way it was supposed to, we are good to finish our configuration by enabling auto-login for the kiosk user.</p>
+<p>Before we enable auto-login, make sure the kiosk user has the “Kiosk Mode” selected in the login screen so it boots into the right desktop.</p>
+<ol>
+<li>
+<p>Got back to Settings &gt; Users, enter the admin password</p>
+</li>
+<li>
+<p>Select the kiosk user and  toggle Auto-login</p>
+</li>
+</ol>
+<p>Now restart the computer. It should now boot directly into the Firefox browser in full screen.</p>
+<hr>
+<p>Considerations:</p>
+<p><em>Browser</em></p>
+<p>When configured this way, there will be no menu bar, application button, search bar, etc. It will only display the current webpage with no additional access. You will be unable to navigate tabs, open a new window, or close the browser.</p>
+<p>There is a bit of a way around this however. The tab hotkeys for Firefox will still work.</p>
+<p><em>Ctrl + t</em>: Opens a new tab</p>
+<p><em>Ctrl + w</em>: Closes the current tab</p>
+<p><em>Ctrl +r</em>: Refreshes the current tab</p>
+<p>Using tabs this way though is difficult as you are unable to see what is open where.</p>
+<p><em>Desktop Environment</em></p>
+<p>When you use the “Kiosk Mode” desktop, there will be no access to any other apps, icons, toolbars, or the like. It will only open Firefox on boot. That is it. You will not even be able to access the terminal through the regular hotkey. There is however a way around this.</p>
+<p><em>Ctrl + Alt + F3</em>: This hotkey will open tty and allow you to enter commands.</p>
+<p>You can use it to power down the machine or navigate the system with commands. It will be handy in case you need to do troubleshooting of your script or other configurations, as the device will now always boot up into Firefox only.</p>
+<p><em>SSH</em></p>
+<p>I would recommend installing SSH on the machine as well if it will be used in an enterprise environment. It will help with remote troubleshooting issues with the configuration. However, I would only do this if the machine will have no PHI or PII if you are required to be HIPAA compliant.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>git_stuff</title>
+            <link>https://nedelkov.xyz/posts/2023/01/git_stuff/</link>
+            <pubDate>Sun, 29 Jan 2023 09:16:44 -0700</pubDate>
+            
+            <guid>https://nedelkov.xyz/posts/2023/01/git_stuff/</guid>
+            <description>Finally got a Github repository set up for this project. It took me a little bit to figure out how to use the site.
+Making a commit and pulling it into the main branch from the terminal took a bit of research to figure out. Turns out, Github depreciated the username and password feature for utilizing the command-line to create push and pull requests.
+The new system requires a user to create a unique token that essentially functions as a password for authorizing actions.</description>
+            <content type="html"><![CDATA[<p>Finally got a Github repository set up for this project. It took me a little bit to figure out how to use the site.</p>
+<p>Making a commit and pulling it into the main branch from the terminal took a bit of research to figure out. Turns out, Github depreciated the username and password feature for utilizing the command-line to create push and pull requests.</p>
+<p>The new system requires a user to create a unique token that essentially functions as a password for authorizing actions.</p>
+<p>I have everything in place now though. I made some changes, created a commit with a new branch, pushed that branch to the repository, and then pulled it into the main branch. As I am not a programmer by trade, I&rsquo;m not sure how useful this knowledge will be but it was fun to figure out!</p>
+<p>Below I am including a couple of the useful commands I have been using:</p>
+<hr>
+<p><strong>Tracks Changes Made</strong></p>
+<p><code>git status</code></p>
+<p><strong>Add All Changed Files to the Staging Environment</strong></p>
+<p><code>git add --all</code></p>
+<p><strong>Commit All Changed Files and Add a Message</strong></p>
+<p><code>git commit -am &quot;Message goes here&quot;</code></p>
+<p><strong>Create a New Branch</strong></p>
+<p><code>git checkout -b &lt;new_branch_name&gt;</code></p>
+<p><strong>Switch the Current Branch</strong></p>
+<p><code>git checkout &lt;branch_name&gt;</code></p>
+<p><strong>View Available and Current Branches</strong></p>
+<p><code>git branches</code></p>
+<p><strong>Push a Branch to the Repository</strong></p>
+<p><code>git push -u origin &lt;branch_name&gt;</code>
+*as a note, &ldquo;origin&rdquo; is simply a shorthand for the repository&rsquo;s URL</p>
+<p><strong>Bring Local Main Branch Up To Date</strong></p>
+<p><code>git pull origin &lt;primary_branch_name&gt;</code></p>
+]]></content>
+        </item>
         
         <item>
             <title>kicking_the_tires</title>
@@ -20,7 +184,7 @@ The current plan is to get a git repository set up. I&amp;rsquo;m hoping I can h
 On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works.</description>
             <content type="html"><![CDATA[<p>I am currently trying to get this site up and running. I have no experience using HUGO to build websites making this quite a challenge.</p>
 <p>The current plan is to get a git repository set up. I&rsquo;m hoping I can have the server update the site itself when it detects a push to the site&rsquo;s repository. Not sure how to do this yet.</p>
-<p>On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works. The terminal theming is <em>definitely</em> cool and not tacky at all.</p>
+<p>On the positive side, I have figured out a bunch about how theming and configuring HUGO sites works. The terminal theming is <em>definitely</em> cool and not tacky at all. I am also gaining a decent familiarity with using markdown to create webpages.</p>
 <p>Looks like this post is working great though! Just need to get the
 &ldquo;about&rdquo; page set up and I basically have a fully functional, if plain, website.</p>
 ]]></content>
